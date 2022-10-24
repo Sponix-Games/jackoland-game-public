@@ -1,0 +1,248 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://src/actors/base_pumpkin.png" type="Texture" id=1]
+[ext_resource path="res://src/actors/Player.gd" type="Script" id=2]
+[ext_resource path="res://src/screens/poppins_regular_400.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://src/actors/ChatBubbleTyping.png" type="Texture" id=4]
+[ext_resource path="res://src/actors/Chat bubble.png" type="Texture" id=5]
+[ext_resource path="res://src/actors/Shadow.png" type="Texture" id=6]
+[ext_resource path="res://src/actors/Ring.png" type="Texture" id=7]
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 320, 320, 320 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 960, 0, 320, 320 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 640, 320, 320, 320 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 320, 320, 320, 320 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 960, 320, 320, 320 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 640, 0, 320, 320 )
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 320, 320 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 320, 0, 320, 320 )
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ SubResource( 5 ) ],
+"loop": true,
+"name": "right",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 4 ) ],
+"loop": true,
+"name": "left",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 7 ) ],
+"loop": true,
+"name": "up",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 6 ) ],
+"loop": true,
+"name": "up-left",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 8 ) ],
+"loop": true,
+"name": "up-right",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 3 ) ],
+"loop": true,
+"name": "down-left",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 1 ) ],
+"loop": true,
+"name": "down",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 2 ) ],
+"loop": true,
+"name": "down-right",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=12]
+size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="Theme" id=11]
+default_font = SubResource( 12 )
+
+[sub_resource type="Animation" id=13]
+resource_name = "ChatBubbleFadeOut"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("ChatBubble2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ChatBubble:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "New Anim"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ChatBubble2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=14]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ChatBubble2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ChatBubble2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ChatBubble:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+
+[node name="root" type="KinematicBody2D"]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Shadow" type="Sprite" parent="."]
+texture = ExtResource( 6 )
+
+[node name="Ring" type="Sprite" parent="."]
+texture = ExtResource( 7 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( -1.4782e-05, -1.4782e-05 )
+scale = Vector2( 0.8, 0.8 )
+frames = SubResource( 9 )
+animation = "down"
+
+[node name="ChatTimer" type="Timer" parent="."]
+
+[node name="TypingTimer" type="Timer" parent="."]
+
+[node name="TypingBubble" type="NinePatchRect" parent="."]
+visible = false
+margin_left = -88.0
+margin_top = -184.0
+margin_right = 88.0
+margin_bottom = -54.0
+texture = ExtResource( 4 )
+patch_margin_left = 81
+patch_margin_top = 40
+patch_margin_right = 81
+patch_margin_bottom = 90
+
+[node name="ChatBubble2" type="NinePatchRect" parent="."]
+margin_left = -104.0
+margin_top = -184.0
+margin_right = 104.0
+margin_bottom = -54.0
+texture = ExtResource( 5 )
+patch_margin_left = 81
+patch_margin_top = 40
+patch_margin_right = 36
+patch_margin_bottom = 90
+
+[node name="ChatBubble" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = -96.0
+margin_top = -168.0
+margin_right = 96.0
+margin_bottom = -88.0
+rect_pivot_offset = Vector2( 75, 0 )
+theme = SubResource( 11 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "New Anim"
+anims/ChatBubbleFadeOut = SubResource( 13 )
+"anims/New Anim" = SubResource( 15 )
+anims/RESET = SubResource( 14 )
+
+[connection signal="timeout" from="ChatTimer" to="." method="_on_ChatTimer_timeout"]
+[connection signal="timeout" from="TypingTimer" to="." method="_on_TypingTimer_timeout"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

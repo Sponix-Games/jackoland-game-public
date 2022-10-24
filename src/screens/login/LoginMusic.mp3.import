@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/LoginMusic.mp3-8a59db46254670c7e5e04c2f7ec4793d.mp3str"
+
+[deps]
+
+source_file="res://src/screens/login/LoginMusic.mp3"
+dest_files=[ "res://.import/LoginMusic.mp3-8a59db46254670c7e5e04c2f7ec4793d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
