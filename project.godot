@@ -6,12 +6,13 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
+config_version=5
 
 [application]
 
 config/name="Jack o' Land"
 run/main_scene="res://src/screens/login/Login.tscn"
+config/features=PackedStringArray("4.0")
 
 [autoload]
 
@@ -19,13 +20,13 @@ Network="*res://src/Network.gd"
 
 [display]
 
-window/size/width=1920
-window/size/height=1080
 window/size/resizable=false
-window/size/test_width=960
-window/size/test_height=540
 window/stretch/mode="2d"
 window/stretch/aspect="expand"
+window/size/width=1920
+window/size/height=1080
+window/size/test_width=960
+window/size/test_height=540
 
 [physics]
 

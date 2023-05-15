@@ -1,0 +1,54 @@
+2a60927148abd1d33b818b535e306557
+::res://::1681521833
+default_env.tres::Environment::-1::1666577871::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1666577871::0::1::::<><>::
+firebase.json::JSON::-1::1666577871::0::1::::<><>::
+icon.png::CompressedTexture2D::2327091197725164239::1666577871::1681521836::1::::<><>::
+Jack_o_Land_Chrismas_sketch_version.ogg::AudioStreamOggVorbis::8355316028987144306::1681515089::1681521835::1::::<><>::
+Login.mp3::AudioStreamMP3::4800834957672828485::1681515092::1681521835::1::::<><>::
+Pumpkin.obj::Mesh::1885757099060408759::1681515076::1681521837::1::::<><>::
+READ.txt::TextFile::-1::1681515110::0::1::::<><>::
+::res://android/::1666577874
+::res://src/::1666577875
+Network.gd::GDScript::-1::1666577874::0::1::::<>Node<>::
+world background.png::CompressedTexture2D::7617495130266653401::1666577874::1681521836::1::::<><>::
+::res://src/actors/::1666577875
+base_pumpkin.png::CompressedTexture2D::2012749290544034344::1666577874::1681521836::1::::<><>::
+body.png::CompressedTexture2D::3416355416848726151::1666577875::1681521836::1::::<><>::
+Chat bubble.png::CompressedTexture2D::2658598137015967008::1666577874::1681521836::1::::<><>::
+ChatBubbleTyping.png::CompressedTexture2D::779310818379381667::1666577874::1681521836::1::::<><>::
+Player.gd::GDScript::-1::1666577874::0::1::::<>KinematicBody2D<>::
+Player.tscn::PackedScene::-1::1666577874::0::1::::<><>::res://src/actors/base_pumpkin.png<>res://src/actors/Player.gd<>res://src/screens/poppins_regular_400.ttf<>res://src/actors/ChatBubbleTyping.png<>res://src/actors/Chat bubble.png<>res://src/actors/Shadow.png<>res://src/actors/Ring.png
+RemotePlayer.gd::GDScript::-1::1666577874::0::1::::<>KinematicBody2D<>::
+RemotePlayer.tscn::PackedScene::-1::1666577874::0::1::::<><>::res://src/actors/base_pumpkin.png<>res://src/actors/RemotePlayer.gd<>res://src/screens/poppins_regular_400.ttf<>res://src/actors/Chat bubble.png<>res://src/actors/ChatBubbleTyping.png<>res://src/actors/Shadow.png
+Ring.png::CompressedTexture2D::8906478423112814007::1666577874::1681521836::1::::<><>::
+Shadow.png::CompressedTexture2D::5918199303109064919::1666577874::1681521836::1::::<><>::
+::res://src/screens/::1666577876
+chat.gd::GDScript::-1::1666577875::0::1::::<>CanvasLayer<>::
+chatbox.gd::GDScript::-1::1666577875::0::1::::<>Node<>::
+new scene.tscn::PackedScene::-1::1666577875::0::1::::<><>::
+poppins_regular_400.ttf::FontFile::8800507251401617333::1666577875::1681521835::1::::<><>::
+WorldScene.gd::GDScript::-1::1666577875::0::1::::<>Node2D<>::
+WorldScene.tscn::PackedScene::-1::1666577875::0::1::::<><>::res://src/screens/WorldScene.gd<>res://src/screens/chat.gd<>res://src/screens/poppins_regular_400.ttf<>res://src/screens/chatbox.gd
+::res://src/screens/login/::1666577875
+Blank.png::CompressedTexture2D::420666027633801991::1666577875::1681521836::1::::<><>::
+Buttons.gd::GDScript::-1::1666577875::0::1::::<>Node2D<>::
+Create.png::CompressedTexture2D::7645382866111392373::1666577875::1681521836::1::::<><>::
+Discord.png::CompressedTexture2D::4095643071001692340::1666577875::1681521836::1::::<><>::
+EXAMPLE.png::CompressedTexture2D::5681201390246041358::1666577875::1681521836::1::::<><>::
+Exit.png::CompressedTexture2D::6499197908551219614::1666577875::1681521836::1::::<><>::
+Facebook.png::CompressedTexture2D::7363965394103019383::1666577875::1681521836::1::::<><>::
+Holder.png::CompressedTexture2D::6302749424154029656::1666577875::1681521836::1::::<><>::
+Instagram.png::CompressedTexture2D::6619525763336369527::1666577875::1681521836::1::::<><>::
+Login.gd::GDScript::-1::1666577875::0::1::::<>TextureButton<>::
+Login.png::CompressedTexture2D::2943256461636756515::1666577875::1681521836::1::::<><>::
+Login.tscn::PackedScene::-1::1666577875::0::1::::<><>::res://src/screens/login/Login.gd<>res://src/screens/login/Logo.png<>res://src/screens/login/Overlay.png<>res://src/screens/login/EXAMPLE.png<>res://src/screens/login/Login.png<>res://src/screens/login/screen.png<>res://src/screens/login/Create.png<>res://src/screens/login/Buttons.gd<>res://src/screens/login/LoginMusic.mp3
+LoginMusic.mp3::AudioStreamMP3::6750722677054550041::1666577875::1681521835::1::::<><>::
+Logo.png::CompressedTexture2D::1169224606912380498::1666577875::1681521836::1::::<><>::
+Overlay.png::CompressedTexture2D::607280575336825250::1666577875::1681521836::1::::<><>::
+Pass.png::CompressedTexture2D::4830399509334100072::1666577875::1681521835::1::::<><>::
+screen.png::CompressedTexture2D::3693012130767688716::1666577875::1681521836::1::::<><>::
+Twitter.png::CompressedTexture2D::7659121495683568297::1666577875::1681521835::1::::<><>::
+User.png::CompressedTexture2D::5812147805050879948::1666577875::1681521835::1::::<><>::
+::res://src/screens/rooms/::1666577876
+town.tscn::PackedScene::-1::1666577876::0::1::::<><>::res://src/actors/Player.tscn
